@@ -1,0 +1,270 @@
+body   {
+    border-top: 0px solid #73bc2b;
+    min-width: 320px;}
+
+.width-container {
+    max-width: 1170px;
+}
+.zel{
+    background-color: #73bc2b;
+    margin-bottom: 10px;
+}
+#mxcpr a {
+    font-size: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+header {
+    padding-bottom: 70px;
+    background-color: #f8f8f8;
+    padding: 0px 0px 5px 0px;
+
+}
+.logo {
+    margin-top: 0px;
+    float: left;
+    margin-left: 0px;
+}
+.header-top {
+    background-color: #f8f8f8;
+    margin-bottom: 1px;
+}
+.header-right{
+    min-width: 200px;
+    right: 0px;
+    font-size:18px;
+    float: left;
+    transition-duration: 150ms;
+    transition-property: color, background-color, opacity, border;}
+
+.header-search{
+    float: left;
+    left: 5px;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+a {
+    outline: none!important;
+    text-decoration: none;
+    color: #05374d;
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+}
+a:hover
+{
+    color: #73bc2b;
+    text-decoration: none;
+}
+.navbar-default {
+    text-align: center;
+    background-color: #fff;
+    border-color: #fff;
+
+}
+
+/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .active > a {
+    color: #67b168;
+    background-color: #f9f9f9;
+}
+.navbar-nav {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+.expirens {
+    background-color: #f8f8f8;
+    font-size: 18px;
+    height: 100px;
+    padding-top: 40px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+#opit{
+    width: 100%;
+    text-align: center;
+}
+.BigFoter{
+    color: #fff;
+    background-color: #59ad06;
+    font-size: 14px;
+    padding-top: 40px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    min-height: 450px;
+}
+.footer{
+    color: #fff;
+    background-color: #59ad06;
+    height: 120px;
+    border-top: 1px solid #73bc2b;
+    font-size: 14px;
+}
+.breadcrumb{
+    padding: 0px;      
+}
+.breadcrumb ul li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.right1{
+    margin-top: 0px;
+    background-color: #f8f8f8;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding: 10px;   
+}
+.main_text{
+    padding-top: 25px;
+    margin-top: 15px;
+}
+
+.main-seroe{
+    background:#f8f8f8;
+    padding: 50px 0 40px;
+}
+.textwidget {
+    color: #fff;
+    font-size: 14px;
+}
+.karta{
+    margin-left: 0px;
+
+}
+.jshop h1{
+    font-size: 20px;
+}
+.top_menu a {
+    color: #fff;
+}
+.top_menu .nav li a:hover
+{
+    background-color: #51a351;
+}
+.verhnee_menu{
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    border-bottom: 1px solid #f8f8f8;
+
+}
+.navbar-nav>li{   
+    font-size: 13px;
+    padding-right: 5px;
+}
+.top_menu .nav li a{
+    padding: 5px 7px;
+}
+.header-top .navbar.navbar-default .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+
+}
+.header-top .navbar-default .container-fluid .collapse.navbar-collapse {
+    background-color: #73bc2b;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0
+}
+.header-top .zel .navbar.navbar-default{
+    border-width:0;
+}
+.header-top .navbar.navbar-default .container-fluid .collapse.navbar-collapse .nav-justified li .btn.btn-default{
+    background-color: #73bc2b;
+    border-color: #73bc2b;
+    transition: all .5s;
+    text-transform: uppercase;   
+    color: #05374d;;
+    font-weight: 700;
+    height: 50px;
+    padding: 15px 0px;
+}
+.header-top .navbar.navbar-default .container-fluid .collapse.navbar-collapse .nav-justified li .btn.btn-default:hover{
+    background-color: #36DF00;    
+}
+h2.category_title{
+     bottom: 25px;
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+img.jshop_img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/*Пагинация*/
+.pagination ul{
+    text-align: center;
+}
+.pagination ul li {
+    display: inline-block;
+    *display: inline;/*хак IE7*/
+    margin: 1px;
+
+    border: solid 1px #888;
+    border-radius: 2px;
+}
+.pagination ul li a{
+    display: block;
+    *display: inline;/*хак IE7*/
+    padding: 2px 4px;
+    text-decoration: none;
+}
+.pagination ul li span{
+    display: block;
+    *display: inline;/*хак IE7*/
+    padding: 2px 4px;
+}
+.pagination ul li.pagination-start span.pagenav, .pagination ul li.pagination-prev span.pagenav,
+.pagination ul li.pagination-next span.pagenav, .pagination ul li.pagination-end span.pagenav {
+    background: none;
+    color: #000;
+}
+.pagination ul li span.pagenav{
+    background: #1BE800;
+    color: #fff;
+}
+.product_title{
+    font-size: 18px;
+  text-transform: uppercase;
+  color: #05374d;
+}
+.form-horizontal .control-label{
+    text-align: left;
+}
+
+/* Not Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav .custom a img {
+       max-width: 50px;       
+    }
+    .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav a {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width : 993px){
+     .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav .custom a img {
+       max-width: 45px;       
+    }
+    .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav a {
+        font-size: 9.3px;
+    }
+}
+
+@media only screen and (max-width : 767px){
+    .header-top .wrapper.container .logo a img{
+        height: 75px;  
+    }
+}
+

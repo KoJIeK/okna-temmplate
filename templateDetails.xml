@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="template" client="site">
+    <name>skilful_okonshchik</name>
+    <creationDate>09 октября 2016</creationDate>
+    <author>KoJIeK</author>
+    <authorEmail>admin@yandex.ru</authorEmail>
+    <copyright>(C) Kolya 2016. All rights reserved.</copyright>
+    <version>0.5.0</version>
+    <description>Шаблон сайта Опытный оконщик</description>
+ 
+    <files>
+        <folder>css</folder>
+        <folder>images</folder>        
+        <folder>js</folder>	
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>error.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>favicon.ico</filename>       
+    </files>
+    <positions>
+        <position>korzina</position>                
+        <position>samoe_verhn</position>                
+        <position>search</position>                
+        <position>Right</position>			
+        <position>footer</position>                              
+        <position>FooterMenu</position>
+        <position>info</position>
+        <position>Gostin</position>
+        <position>kr_matras</position>
+        <position>kitchen</position>
+        <position>ofice_mebel</position>
+        <position>shkaf_cupe</position>
+        <position>for_gostin</position>
+        <position>soft_mebel</position>
+        <position>dizign_proj</position>
+        <position>detskie</position>
+        <position>interjer</position>
+        <position>dostavka</position>
+        <position>spaljni</position>
+        <position>breadcrumb</position>
+        <position>slider</position>
+    </positions>
+</extension>
