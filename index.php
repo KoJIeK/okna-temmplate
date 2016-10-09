@@ -5,6 +5,7 @@ defined('_JEXEC') or die;
 $doc = JFactory::getDocument();
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/style.css');
+$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
 ?>
 
 <!DOCTYPE html>

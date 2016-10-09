@@ -11,7 +11,8 @@
     <files>
         <folder>css</folder>
         <folder>images</folder>        
-        <folder>js</folder>	
+        <folder>js</folder>
+        <folder>fonts</folder>        	
         <filename>index.html</filename>
         <filename>index.php</filename>
         <filename>error.php</filename>
