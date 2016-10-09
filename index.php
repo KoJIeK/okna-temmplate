@@ -35,9 +35,9 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3 logo">
-                        <a href="#"><img src="img/logo.png" alt="Опытный оконщик"></a>                        
+                        <a href="#"><img src="images/logo.png" alt="Опытный оконщик"></a>                        
                         <div class="zakaz">
-                            <a href="#"><img src="img/zakaz.png" alt="Заказать"></a>
+                            <a href="#"><img src="images/zakaz.png" alt="Заказать"></a>
                         </div>                                                
                     </div>                    
                     <div class="col-sm-9 col-xs-12 menu-top">
@@ -51,7 +51,7 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Okna"><span></span></a>
+                                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Okna"><span></span></a>
                                 </div>
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -79,7 +79,7 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                             <!-- Контент слайда (slider wrap)-->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img src="img/Slide.jpg" alt="Окна">
+                                    <img src="images/Slide.jpg" alt="Окна">
                                     <div class="carousel-caption">
                                         <h3>Со стеклами</h3>
                                         <p>Зимой тепло</p>
@@ -87,7 +87,7 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                                 </div>
 
                                 <div class="item ">
-                                    <img src="img/Slide2.jpg" alt="Окна">
+                                    <img src="images/Slide2.jpg" alt="Окна">
                                     <div class="carousel-caption">
                                         <h3>Со стеклами</h3>
                                         <p>Осенью не дует</p>
@@ -95,7 +95,7 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                                 </div>
 
                                 <div class="item ">
-                                    <img src="img/Slide3.jpg" alt="Окна">
+                                    <img src="images/Slide3.jpg" alt="Окна">
                                     <div class="carousel-caption">
                                         <h3>Со стеклами</h3>
                                         <p>Воообще супер!</p>
@@ -124,44 +124,44 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok1.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok1.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok2.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok2.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok3.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok3.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok4.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok4.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok5.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok5.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok6.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok6.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok7.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok7.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok8.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok8.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
@@ -171,26 +171,26 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
     
                 
                 
-                <a href="#"><img src="img/soveti.png" alt="CREAM JANE JEANS DRESS"></a>
+                <a href="#"><img src="images/soveti.png" alt="CREAM JANE JEANS DRESS"></a>
                     <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok9.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok9.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok10.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok10.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok11.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok11.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok12.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok12.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
