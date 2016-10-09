@@ -1,270 +1,267 @@
-body   {
-    border-top: 0px solid #73bc2b;
-    min-width: 320px;}
+body{
+    background: #fff;
+    font-size: 14px;
+    color: #000;
+    min-width: 320px;
+}
+.logo{
+    padding-left: 0px;
+    padding-right: 0px; 
 
-.width-container {
-    max-width: 1170px;
 }
-.zel{
-    background-color: #73bc2b;
-    margin-bottom: 10px;
-}
-#mxcpr a {
-    font-size: 0;
+.zakaz{    
+     border: 10px solid red;
+     border-radius: 15px;
+     margin-right: 1px;
+     height: 247px;
+     padding-top: 15px;
 }
 img{
     max-width: 100%;
     height: auto;
 }
-header {
-    padding-bottom: 70px;
-    background-color: #f8f8f8;
-    padding: 0px 0px 5px 0px;
+.menu-top{
+    padding-left: 0px;
+    padding-right: 0px;    
+    background: #fff;    
+}
+.btn-red{
+    background: #d51e08;
+    color: #fff;
+}
+.btn-red:hover{
+    background: #ec4835;
+}
+.menu-top{
+    position: relative;
+}
+.menu-top .navbar{
+    margin-bottom: 0;
+    background: #fff;
+    padding: 0px 0px;
+    text-transform: uppercase;
+}
+.menu-top .navbar-default .nav-justified > li > a{
+    color: #000;
+    padding-bottom: 0px;
+    transition: background .3s;    
+}
+.menu-top .navbar-default .nav-justified > li > a:hover{
+    text-decoration: underline;
+}
+.menu-top nav.navbar.navbar-default{
+    border-width: 0px;
+}
+.menu-top .navbar-default .nav-justified > li > a.btn-red{
+    color: #fff;
+    border-radius: 7px;
+    text-align: center;
+    margin-right: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
-}
-.logo {
-    margin-top: 0px;
-    float: left;
-    margin-left: 0px;
-}
-.header-top {
-    background-color: #f8f8f8;
-    margin-bottom: 1px;
-}
-.header-right{
-    min-width: 200px;
-    right: 0px;
-    font-size:18px;
-    float: left;
-    transition-duration: 150ms;
-    transition-property: color, background-color, opacity, border;}
-
-.header-search{
-    float: left;
-    left: 5px;
-    margin-top: 5px;
-    padding-right: 10px;
-}
-
-a {
-    outline: none!important;
+.menu-top .navbar-default .nav-justified > li > a.btn-red:hover{
+    background: #ec4835;
     text-decoration: none;
-    color: #05374d;
-    transition-duration: 250ms;
-    transition-property: color;
-    transition-timing-function: ease-in-out;
 }
-a:hover
-{
-    color: #73bc2b;
-    text-decoration: none;
+.menu-top .navbar-default .container-fluid  {
+    padding-left: 0px;
+    padding-right: 0px;
 }
-.navbar-default {
-    text-align: center;
-    background-color: #fff;
-    border-color: #fff;
-
+.menu-top .navbar-default .container-fluid .collapse.navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.menu-top .carousel-inner {
+    max-height: 245px;
 }
 
-/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
-.navbar-default .navbar-nav > .active > a {
-    color: #67b168;
-    background-color: #f9f9f9;
+.main-content .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    
 }
-.navbar-nav {
-    float: left;
-    text-align: center;
-    font-size: 14px;
-
+.menu-top .navbar-brand{
+    display: none;
 }
-
-.navbar {
-    margin-bottom: 0px;
+.site-content .col-sm-9{
+    padding-left: 1px;
+    padding-right: 1px;
+    
 }
-.expirens {
-    background-color: #f8f8f8;
-    font-size: 18px;
-    height: 100px;
-    padding-top: 40px;
-    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+.main-conteiner{
+     border: 3px solid red;
+     border-radius: 5px;
+     padding: 5px;     
 }
-#opit{
-    width: 100%;
-    text-align: center;
+.main-content .container .col-xs-6 {
+    padding-left: 0;
+    padding-right: 0;   
 }
-.BigFoter{
-    color: #fff;
-    background-color: #59ad06;
-    font-size: 14px;
-    padding-top: 40px;
-    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-    min-height: 450px;
+.main-content .container .row{
+    margin-left: 0;
+    margin-right: 0;
 }
-.footer{
-    color: #fff;
-    background-color: #59ad06;
-    height: 120px;
-    border-top: 1px solid #73bc2b;
-    font-size: 14px;
+.product-img {
+    margin: 3px; 
+    transition: all .3s;
 }
-.breadcrumb{
-    padding: 0px;      
+.product-img:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, .5);
 }
-.breadcrumb ul li{
-    padding-top: 3px;
-    padding-bottom: 3px;
+.banner{
+    height: 161px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
 }
-.right1{
-    margin-top: 0px;
-    background-color: #f8f8f8;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
-    margin-bottom: 40px;
-    margin-top: 0;
-    padding: 10px;   
-}
-.main_text{
-    padding-top: 25px;
-    margin-top: 15px;
-}
-
-.main-seroe{
-    background:#f8f8f8;
-    padding: 50px 0 40px;
-}
-.textwidget {
-    color: #fff;
-    font-size: 14px;
-}
-.karta{
-    margin-left: 0px;
-
-}
-.jshop h1{
-    font-size: 20px;
-}
-.top_menu a {
-    color: #fff;
-}
-.top_menu .nav li a:hover
-{
-    background-color: #51a351;
-}
-.verhnee_menu{
-    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-    border-bottom: 1px solid #f8f8f8;
-
-}
-.navbar-nav>li{   
-    font-size: 13px;
-    padding-right: 5px;
-}
-.top_menu .nav li a{
-    padding: 5px 7px;
-}
-.header-top .navbar.navbar-default .container-fluid{
+.second_menu{
     padding-left: 0;
     padding-right: 0;
-
 }
-.header-top .navbar-default .container-fluid .collapse.navbar-collapse {
-    background-color: #73bc2b;
-    border-radius: 0;
-    padding-left: 0;
-    padding-right: 0
-}
-.header-top .zel .navbar.navbar-default{
-    border-width:0;
-}
-.header-top .navbar.navbar-default .container-fluid .collapse.navbar-collapse .nav-justified li .btn.btn-default{
-    background-color: #73bc2b;
-    border-color: #73bc2b;
-    transition: all .5s;
-    text-transform: uppercase;   
-    color: #05374d;;
-    font-weight: 700;
-    height: 50px;
-    padding: 15px 0px;
-}
-.header-top .navbar.navbar-default .container-fluid .collapse.navbar-collapse .nav-justified li .btn.btn-default:hover{
-    background-color: #36DF00;    
-}
-h2.category_title{
-     bottom: 25px;
-    font-size: 18px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-img.jshop_img {
-    max-width: 100%;
-    height: auto;
+.second_menu a{
+     margin-left: 1px;
+     margin-right: 1px;
+     border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 10px;
+    margin-top: 3px;
+    padding: 5px;
+    transition: all 0.3s; 
+    color: red;
+    font-size: 24px;	
 }
 
-
-
-
-/*Пагинация*/
-.pagination ul{
-    text-align: center;
+.site-content{
+    margin-top: 5px;
 }
-.pagination ul li {
-    display: inline-block;
-    *display: inline;/*хак IE7*/
-    margin: 1px;
-
-    border: solid 1px #888;
-    border-radius: 2px;
+.bottoms{
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 10px;
+    margin-top: 3px;
+    padding: 5px;
+    transition: all 0.3s;
+	
 }
-.pagination ul li a{
-    display: block;
-    *display: inline;/*хак IE7*/
-    padding: 2px 4px;
+.bottoms:hover{
+    background-color: #FF4500;
+	text-decoration: none;
+}
+.bottoms a{
+	font-size: 24px;
+	color: red;	
     text-decoration: none;
 }
-.pagination ul li span{
-    display: block;
-    *display: inline;/*хак IE7*/
-    padding: 2px 4px;
-}
-.pagination ul li.pagination-start span.pagenav, .pagination ul li.pagination-prev span.pagenav,
-.pagination ul li.pagination-next span.pagenav, .pagination ul li.pagination-end span.pagenav {
-    background: none;
-    color: #000;
-}
-.pagination ul li span.pagenav{
-    background: #1BE800;
-    color: #fff;
-}
-.product_title{
-    font-size: 18px;
-  text-transform: uppercase;
-  color: #05374d;
-}
-.form-horizontal .control-label{
-    text-align: left;
+
+
+.footer {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #f5f5f5;
+    
 }
 
-/* Not Large Devices, Wide Screens */
+/* super Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .menu-top .container-fluid {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .menu-top .carousel-inner {
+        height: 275px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+}
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav .custom a img {
-       max-width: 50px;       
+    .menu-top .carousel-inner{
+        margin-top: 5px;
+        margin-bottom: 5px;}    
+    .zakaz{
+        padding-top: 15px;
+        height: 220px;
     }
-    .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav a {
-        font-size: 12px;
-    }
-}
-@media only screen and (max-width : 993px){
-     .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav .custom a img {
-       max-width: 45px;       
-    }
-    .verhnee_menu .navbar-default .navbar-collapse .nav.navbar-nav a {
-        font-size: 9.3px;
+    .banner{
+        margin-top: 3px;
+        margin-bottom: 3px;
     }
 }
 
-@media only screen and (max-width : 767px){
-    .header-top .wrapper.container .logo a img{
-        height: 75px;  
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .menu-top .carousel-inner {
+        max-height: 187px;
+    }
+    .menu-top .navbar-default .nav-justified > li > a.btn-red{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .zakaz{
+        padding-top: 15px;
+        height: 172px;
+    }    
+    .banner{
+        height: 115px;
+        margin-bottom: 3px;
     }
 }
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .logo{
+        display: none;}
+    .menu-top .navbar-brand{      
+        padding: 0;
+        margin-left: 5px;
+        display: inline;
+    }
+    .menu-top .navbar-brand img{
+        max-height: 50px;
+    }
+    .menu-top .carousel-inner .carousel-caption{
+        top: 50px;
+    }
+    .banner{
+        margin: 3px;
+    }
+    .bottoms{
+        margin-left: 3px;
+        width: 49%;
+    }
+    .main-conteiner{
+        margin-top: 10px;        
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .logo{
+        display: none;} 
+    .menu-top .navbar{
+        margin-bottom: 0;
+        display: block;}
+
+    .menu-top .navbar-brand{      
+        padding: 0;
+        margin-left: 5px;
+        display: inline;
+    }
+    .menu-top .navbar-brand img{
+        max-height: 50px;
+    }
+}
