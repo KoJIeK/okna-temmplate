@@ -18,7 +18,6 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/fon
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!-- Bootstrap -->
-
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -69,59 +68,71 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/fon
                             </div><!-- /.container-fluid -->
                         </nav>  
                         
-                       <!-- Карусель -->
+                      
+    <!-- Карусель -->
     <?php if (JUri::current() == JUri::base()): ?>
        <jdoc:include type="modules" name="slider" style="xhtml"/>
         <!-- Карусель -->
+    <?php endif; ?>
+    <!-- Карусель -->
+                    
                         
                     </div>
                 </div>
             </div> 
         </header>
-
+<?php if (JUri::current() == JUri::base()): ?>
         <section class="main-content">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok1.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            Energo
+                            <jdoc:include type="modules" name="Energo" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok2.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            Podokon
+                            <jdoc:include type="modules" name="Podokon" style="xhtml" />                                                
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok3.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            otkosy
+                            <jdoc:include type="modules" name="otkosy" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok4.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            setki
+                            <jdoc:include type="modules" name="setki" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok5.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            jaluzi
+                            <jdoc:include type="modules" name="jaluzi" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok6.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            rolstavni
+                            <jdoc:include type="modules" name="rolstavni" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok7.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            vorota
+                            <jdoc:include type="modules" name="vorota" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok8.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            disigne
+                            <jdoc:include type="modules" name="disigne" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
@@ -130,37 +141,43 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/fon
   
     
                 
-                
-                <a href="#"><img src="images/soveti.png" alt="CREAM JANE JEANS DRESS"></a>
+                soveti
+                <jdoc:include type="modules" name="soveti" style="xhtml" /> 
                     <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok9.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            galary
+                            <jdoc:include type="modules" name="galary" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok10.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            humor
+                            <jdoc:include type="modules" name="humor" style="xhtml" />                                                 
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok11.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            soveti
+                            <jdoc:include type="modules" name="soveti" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="images/blok12.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            write
+                             <jdoc:include type="modules" name="write" style="xhtml" />                                                 
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
             </div>
         </section>
+    <?php endif; ?>
 
 
   <footer class="footer clearfix">
         <div class="container">
         <p>&copy; 2016 Company, Inc.</p>
+        <jdoc:include type="modules" name="footer" style="xhtml" />
       </div>
       
       </footer>

@@ -21,9 +21,21 @@
         <filename>favicon.ico</filename>       
     </files>
     <positions>
-        <position>korzina</position>                
-        <position>samoe_verhn</position>
-        <position>breadcrumb</position>
+        <position>Energo</position>                
+        <position>Podokon</position>
+        <position>otkosy</position>
+        <position>setki</position>
+        <position>jaluzi</position>
+        <position>rolstavni</position>
+        <position>vorota</position>
+        <position>disigne</position>
+        <position>soveti</position>
+        <position>galary</position>
+        <position>humor</position>
+        <position>soveti</position>
+        <position>write</position>
+        <position>footer</position>
+        
         <position>slider</position>
     </positions>
 </extension>
