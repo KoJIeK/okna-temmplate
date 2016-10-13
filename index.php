@@ -1,12 +1,11 @@
 <?php
 // No direct access.
 defined('_JEXEC') or die;
-
 $doc = JFactory::getDocument();
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/style.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
-$doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js');
+$doc->addScript(JUri::base() . 'templates/' . $doc->template . '/js/bootstrap.min.js');
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +41,7 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js')
                     </div>                                                
                 </div>                    
                 <div class="col-sm-9 col-xs-12 menu-top">
-                    
+
                     <nav class="navbar navbar-default" role="navigation">
                         <div class="container-fluid">
                             <!-- Brand and toggle get grouped for better mobile display -->
@@ -90,7 +89,7 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js')
                         <!-- Место для баннера -->
                         <!-- второе меню -->
                         <div  class="second_menu container-fluid nav nav-justified">
-                             <jdoc:include type="modules" name="second_menu"/>                           
+                            <jdoc:include type="modules" name="second_menu"/>                           
                         </div>
                         <!-- второе меню -->
                     <?php endif; ?>
@@ -160,7 +159,7 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js')
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
-                
+
                 soveti
                 <jdoc:include type="modules" name="soveti" style="xhtml" /> 
                 <div class="row">
@@ -192,7 +191,7 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js')
             </div>
         </section>
     <?php endif; ?>
-    
+
     <!-- основоной контент не главная-->
     <?php if (JUri::current() != JUri::base()): ?>
         <section class="site-content">
@@ -201,7 +200,7 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js')
                     <div class="col-sm-3 left-size">
                         <div class="row">
                             <div class="col-xs-6 col-sm-12 bottoms">
-                                 <jdoc:include type="modules" name="left" style="xhtml" />  
+                                <jdoc:include type="modules" name="left" style="xhtml" />  
                             </div>
                             <div class="col-xs-6 col-sm-12 bottoms">
                                 <a href="#">Окна</a>
@@ -222,7 +221,7 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js')
 
                     </div>
                     <div class="col-sm-9">
-                         
+
                         <div class="main-conteiner">
                             <jdoc:include type="component" />
                             <a href="#"><img src="img/blok2.png" alt="CREAM JANE JEANS DRESS"></a>
