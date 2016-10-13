@@ -42,7 +42,7 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js')
                     </div>                                                
                 </div>                    
                 <div class="col-sm-9 col-xs-12 menu-top">
-                    <jdoc:include type="modules" name="main_menu"/>
+                    
                     <nav class="navbar navbar-default" role="navigation">
                         <div class="container-fluid">
                             <!-- Brand and toggle get grouped for better mobile display -->
