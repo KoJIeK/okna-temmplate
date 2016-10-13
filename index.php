@@ -6,12 +6,13 @@ $doc = JFactory::getDocument();
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/style.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
+$doc->addScript(JUri::base().'templates/'.$doc->template.'/js/bootstrap.min.js');
 ?>
 
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <jdoc:include type="head" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,56 +33,79 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/fon
 </head>
 <body>         
     <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 logo">
-                        <a href="#"><img src="images/logo.png" alt="Опытный оконщик"></a>                        
-                        <div class="zakaz">
-                            <a href="#"><img src="images/zakaz.png" alt="Заказать"></a>
-                        </div>                                                
-                    </div>                    
-                    <div class="col-sm-9 col-xs-12 menu-top">
-                        <nav class="navbar navbar-default" role="navigation">
-                            <div class="container-fluid">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Okna"><span></span></a>
-                                </div>
-                                <!-- Collect the nav links, forms, and other content for toggling -->
-                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <ul class="nav nav-justified">
-                                        <li><a href="#" class="btn-red">Окна</a></li>
-                                        <li><a href="#" class="btn-red">Производство</a></li>
-                                        <li><a href="#" class="btn-red">Цены</a></li>
-                                        <li><a href="#" class="btn-red">Монтаж</a></li>
-                                        <li><a href="#" class="btn-red">Ремонт</a></li>
-                                        <li><a href="#" class="btn-red">Контакты</a></li>                                        
-                                    </ul>                                
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 logo">
+                    <a href="/"><img src="images/logo.png" alt="Опытный оконщик"></a>                        
+                    <div class="zakaz">
+                        <a href="#"><img src="images/zakaz.png" alt="Заказать"></a>
+                    </div>                                                
+                </div>                    
+                <div class="col-sm-9 col-xs-12 menu-top">
+                    <jdoc:include type="modules" name="main_menu"/>
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Okna"><span></span></a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav nav-justified">
+                                    <li><a href="#" class="btn-red">Окна</a></li>
+                                    <li><a href="#" class="btn-red">Производство</a></li>
+                                    <li><a href="#" class="btn-red">Цены</a></li>
+                                    <li><a href="#" class="btn-red">Монтаж</a></li>
+                                    <li><a href="#" class="btn-red">Ремонт</a></li>
+                                    <li><a href="#" class="btn-red">Контакты</a></li>                                        
+                                </ul>                                
 
-                                </div><!-- /.navbar-collapse -->
-                            </div><!-- /.container-fluid -->
-                        </nav>  
-                        
-                      
-    <!-- Карусель -->
-    <?php if (JUri::current() == JUri::base()): ?>
-       <jdoc:include type="modules" name="slider" style="xhtml"/>
-        <!-- Карусель -->
-    <?php endif; ?>
-    <!-- Карусель -->
-                    
-                        
-                    </div>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>  
+
+
+                    <!-- Карусель -->
+                    <?php if (JUri::current() == JUri::base()): ?>
+                        <jdoc:include type="modules" name="slider" style="xhtml"/>
+                    <?php endif; ?>
+                    <!-- Карусель -->
+                    <!-- Заголовок и меню не главная -->
+
+                    <?php if (JUri::current() != JUri::base()): ?>
+                        <!-- Место для баннера -->
+                        <div class="banner">
+                            <jdoc:include type="modules" name="banner" style="xhtml" />
+                            <p>Окно - сложная строительная конструкция, 
+                                состоящая из рамы, фурнитуры и стеклопакета. 
+                                Предлагаем самостоятельно выбрать профиль 
+                                ПВХ рамы, фурнитуру и стеклопакет. </p>
+                        </div>
+                        <!-- Место для баннера -->
+                        <!-- второе меню -->
+                        <div  class="second_menu container-fluid nav nav-justified">
+                             <jdoc:include type="modules" name="second_menu"/>                           
+                        </div>
+                        <!-- второе меню -->
+                    <?php endif; ?>
+
+                    <!-- Заголовок и меню не главная -->
+
+
+
+
+
                 </div>
-            </div> 
-        </header>
-<?php if (JUri::current() == JUri::base()): ?>
+            </div>
+        </div> 
+    </header>
+    <?php if (JUri::current() == JUri::base()): ?>
         <section class="main-content">
             <div class="container text-center">
                 <div class="row">
@@ -136,14 +160,10 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/fon
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
-               
-       
-  
-    
                 
                 soveti
                 <jdoc:include type="modules" name="soveti" style="xhtml" /> 
-                    <div class="row">
+                <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
                             galary
@@ -165,25 +185,72 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/fon
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
                             write
-                             <jdoc:include type="modules" name="write" style="xhtml" />                                                 
+                            <jdoc:include type="modules" name="write" style="xhtml" />                                                 
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
             </div>
         </section>
     <?php endif; ?>
+    
+    <!-- основоной контент не главная-->
+    <?php if (JUri::current() != JUri::base()): ?>
+        <section class="site-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 left-size">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-12 bottoms">
+                                 <jdoc:include type="modules" name="left" style="xhtml" />  
+                            </div>
+                            <div class="col-xs-6 col-sm-12 bottoms">
+                                <a href="#">Окна</a>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 bottoms">
+                                <a href="#">Окна</a>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 bottoms">
+                                <a href="#">Окна</a>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 bottoms">
+                                <a href="#">Окна</a>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 bottoms">
+                                <a href="#">Окна</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-9">
+                         
+                        <div class="main-conteiner">
+                            <jdoc:include type="component" />
+                            <a href="#"><img src="img/blok2.png" alt="CREAM JANE JEANS DRESS"></a>
+                            <p>Окно - сложная строительная конструкция, 
+                                состоящая из рамы, фурнитуры и стеклопакета. 
+                                Предлагаем самостоятельно выбрать профиль 
+                                ПВХ рамы, фурнитуру и стеклопакет. </p>
+                        </div><!-- /.product-img -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <?php endif; ?>
+    <!-- основоной контент не главная-->   
 
 
-  <footer class="footer clearfix">
+    <footer class="footer clearfix">
         <div class="container">
-        <p>&copy; 2016 Company, Inc.</p>
-        <jdoc:include type="modules" name="footer" style="xhtml" />
-      </div>
-      
-      </footer>
+            <p>&copy; 2016 Company, Inc.</p>
+            <jdoc:include type="modules" name="footer" style="xhtml" />
+        </div>
+
+    </footer>
 
 
-       
+
 </body>
 
 

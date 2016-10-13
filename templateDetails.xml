@@ -35,6 +35,10 @@
         <position>soveti</position>
         <position>write</position>
         <position>footer</position>
+        <position>left</position>
+        <position>banner</position>
+        <position>second_menu</position>
+        <position>main_menu</position>
         
         <position>slider</position>
     </positions>
