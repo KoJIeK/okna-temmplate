@@ -5,12 +5,13 @@ defined('_JEXEC') or die;
 $doc = JFactory::getDocument();
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/style.css');
+$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
 ?>
 
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <jdoc:include type="head" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,9 +36,9 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3 logo">
-                        <a href="#"><img src="img/logo.png" alt="Опытный оконщик"></a>                        
+                        <a href="#"><img src="images/logo.png" alt="Опытный оконщик"></a>                        
                         <div class="zakaz">
-                            <a href="#"><img src="img/zakaz.png" alt="Заказать"></a>
+                            <a href="#"><img src="images/zakaz.png" alt="Заказать"></a>
                         </div>                                                
                     </div>                    
                     <div class="col-sm-9 col-xs-12 menu-top">
@@ -51,7 +52,7 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Okna"><span></span></a>
+                                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Okna"><span></span></a>
                                 </div>
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,51 +69,10 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                             </div><!-- /.container-fluid -->
                         </nav>  
                         
-                        <!-- Карусель -->
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Указатели -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <!-- Контент слайда (slider wrap)-->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="img/Slide.jpg" alt="Окна">
-                                    <div class="carousel-caption">
-                                        <h3>Со стеклами</h3>
-                                        <p>Зимой тепло</p>
-                                    </div>
-                                </div>
-
-                                <div class="item ">
-                                    <img src="img/Slide2.jpg" alt="Окна">
-                                    <div class="carousel-caption">
-                                        <h3>Со стеклами</h3>
-                                        <p>Осенью не дует</p>
-                                    </div>
-                                </div>
-
-                                <div class="item ">
-                                    <img src="img/Slide3.jpg" alt="Окна">
-                                    <div class="carousel-caption">
-                                        <h3>Со стеклами</h3>
-                                        <p>Воообще супер!</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- Элементы управления -->
-                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>         
-
-                        <!-- Карусель -->
+                       <!-- Карусель -->
+    <?php if (JUri::current() == JUri::base()): ?>
+       <jdoc:include type="modules" name="slider" style="xhtml"/>
+        <!-- Карусель -->
                         
                     </div>
                 </div>
@@ -124,44 +84,44 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok1.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok1.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok2.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok2.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok3.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok3.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok4.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok4.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok5.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok5.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok6.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok6.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok7.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok7.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok8.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok8.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
@@ -171,26 +131,26 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
     
                 
                 
-                <a href="#"><img src="img/soveti.png" alt="CREAM JANE JEANS DRESS"></a>
+                <a href="#"><img src="images/soveti.png" alt="CREAM JANE JEANS DRESS"></a>
                     <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok9.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok9.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok10.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok10.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok11.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok11.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            <a href="#"><img src="img/blok12.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
+                            <a href="#"><img src="images/blok12.png" alt="CREAM JANE JEANS DRESS"></a>                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
@@ -206,12 +166,9 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/sty
       </footer>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+       
 </body>
 
-
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36601105 = new Ya.Metrika({ id:36601105, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/36601105" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 </html>

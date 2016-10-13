@@ -22,24 +22,7 @@
     </files>
     <positions>
         <position>korzina</position>                
-        <position>samoe_verhn</position>                
-        <position>search</position>                
-        <position>Right</position>			
-        <position>footer</position>                              
-        <position>FooterMenu</position>
-        <position>info</position>
-        <position>Gostin</position>
-        <position>kr_matras</position>
-        <position>kitchen</position>
-        <position>ofice_mebel</position>
-        <position>shkaf_cupe</position>
-        <position>for_gostin</position>
-        <position>soft_mebel</position>
-        <position>dizign_proj</position>
-        <position>detskie</position>
-        <position>interjer</position>
-        <position>dostavka</position>
-        <position>spaljni</position>
+        <position>samoe_verhn</position>
         <position>breadcrumb</position>
         <position>slider</position>
     </positions>
