@@ -95,11 +95,6 @@ $doc->addScript(JUri::base() . 'templates/' . $doc->template . '/js/bootstrap.mi
                     <?php endif; ?>
 
                     <!-- Заголовок и меню не главная -->
-
-
-
-
-
                 </div>
             </div>
         </div> 
