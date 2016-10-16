@@ -10,11 +10,11 @@ body{
 
 }
 .zakaz{    
-     border: 10px solid red;
-     border-radius: 15px;
-     margin-right: 1px;
-     height: 247px;
-     padding-top: 15px;
+    border: 10px solid red;
+    border-radius: 15px;
+    margin-right: 1px;
+    height: 247px;
+    padding-top: 5px;
 }
 img{
     max-width: 100%;
@@ -80,7 +80,7 @@ img{
 .main-content .container {
     padding-left: 0px;
     padding-right: 0px;
-    
+
 }
 .menu-top .navbar-brand{
     display: none;
@@ -88,12 +88,12 @@ img{
 .site-content .col-sm-9{
     padding-left: 1px;
     padding-right: 1px;
-    
+
 }
 .main-conteiner{
-     border: 3px solid red;
-     border-radius: 5px;
-     padding: 5px;     
+    border: 3px solid red;
+    border-radius: 5px;
+    padding: 5px;     
 }
 .main-content .container .col-xs-6 {
     padding-left: 0;
@@ -119,23 +119,43 @@ img{
     padding: 10px;
     overflow: hidden;
 }
-.second_menu{
-    padding-left: 0;
-    padding-right: 0;
+
+
+.second_menu {
+    position: relative; display: table;
+    width: 100%; height: 50px;
 }
-.second_menu a{
-     margin-left: 1px;
-     margin-right: 1px;
-     border-style: solid;
-    border-width: 2px;
+.second_menu li {
+    display: table-cell; position: relative;
+}
+.second_menu li a {
+    display: block; position: relative;
+    width: 100%; height: 100%;
+    text-align:center;
+    line-height: 50px; /* для того чтобы отцентрировать текст по вертикали */
     border-color: red;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    color: red;
+    font-size: 24px;
+    margin-left: 1px;
+    margin-right: 1px;
     margin-top: 3px;
     padding: 5px;
-    transition: all 0.3s; 
-    color: red;
-    font-size: 24px;	
+    transition: all 0.3s ease 0s;
+
+
 }
+.second_menu li ul {
+    display: none; position: absolute;
+    width: 100%;
+    margin: 0px; padding: 0px;
+    border: 2px solid red;
+}
+.second_menu li ul li { display: block; }
+.second_menu li:hover ul { display: block; }
+
 
 .site-content{
     margin-top: 5px;
@@ -148,15 +168,15 @@ img{
     margin-top: 3px;
     padding: 5px;
     transition: all 0.3s;
-	
+
 }
 .bottoms:hover{
     background-color: #FF4500;
-	text-decoration: none;
+    text-decoration: none;
 }
 .bottoms a{
-	font-size: 24px;
-	color: red;	
+    font-size: 24px;
+    color: red;	
     text-decoration: none;
 }
 
@@ -167,7 +187,7 @@ img{
     padding-bottom: 20px;
     padding-top: 20px;
     background-color: #f5f5f5;
-    
+
 }
 
 /* super Large Devices, Wide Screens */

@@ -1,6 +1,7 @@
 <?php
 // No direct access.
 defined('_JEXEC') or die;
+
 $doc = JFactory::getDocument();
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/style.css');
@@ -37,7 +38,7 @@ $doc->addScript(JUri::base() . 'templates/' . $doc->template . '/js/bootstrap.mi
                 <div class="col-sm-3 logo">
                     <a href="/"><img src="images/logo.png" alt="Опытный оконщик"></a>                        
                     <div class="zakaz">
-                        <a href="#"><img src="images/zakaz.png" alt="Заказать"></a>
+                        <jdoc:include type="modules" name="Zakaz" style="xhtml"/>
                     </div>                                                
                 </div>                    
                 <div class="col-sm-9 col-xs-12 menu-top">
@@ -88,13 +89,18 @@ $doc->addScript(JUri::base() . 'templates/' . $doc->template . '/js/bootstrap.mi
                         </div>
                         <!-- Место для баннера -->
                         <!-- второе меню -->
-                        <div  class="second_menu container-fluid nav nav-justified">
+                        <div  class="second_menu">
                             <jdoc:include type="modules" name="second_menu"/>                           
                         </div>
                         <!-- второе меню -->
                     <?php endif; ?>
 
                     <!-- Заголовок и меню не главная -->
+
+
+
+
+
                 </div>
             </div>
         </div> 
@@ -104,81 +110,67 @@ $doc->addScript(JUri::base() . 'templates/' . $doc->template . '/js/bootstrap.mi
             <div class="container text-center">
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
-                        <div class="product-img">
-                            Energo
+                        <div class="product-img">                            
                             <jdoc:include type="modules" name="Energo" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
-                        <div class="product-img">
-                            Podokon
+                        <div class="product-img">                            
                             <jdoc:include type="modules" name="Podokon" style="xhtml" />                                                
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
-                        <div class="product-img">
-                            otkosy
+                        <div class="product-img">                            
                             <jdoc:include type="modules" name="otkosy" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
-                        <div class="product-img">
-                            setki
+                        <div class="product-img">                            
                             <jdoc:include type="modules" name="setki" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
-                        <div class="product-img">
-                            jaluzi
+                        <div class="product-img">                           
                             <jdoc:include type="modules" name="jaluzi" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            rolstavni
                             <jdoc:include type="modules" name="rolstavni" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            vorota
                             <jdoc:include type="modules" name="vorota" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            disigne
                             <jdoc:include type="modules" name="disigne" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>                    
                 </div>
-
-                soveti
                 <jdoc:include type="modules" name="soveti" style="xhtml" /> 
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            galary
                             <jdoc:include type="modules" name="galary" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            humor
                             <jdoc:include type="modules" name="humor" style="xhtml" />                                                 
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            soveti
-                            <jdoc:include type="modules" name="soveti" style="xhtml" />                                                  
+                            <jdoc:include type="modules" name="otziv" style="xhtml" />                                                  
                         </div><!-- /.product-img -->
                     </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="product-img">
-                            write
                             <jdoc:include type="modules" name="write" style="xhtml" />                                                 
                         </div><!-- /.product-img -->
                     </div>                    
@@ -196,35 +188,15 @@ $doc->addScript(JUri::base() . 'templates/' . $doc->template . '/js/bootstrap.mi
                         <div class="row">
                             <div class="col-xs-6 col-sm-12 bottoms">
                                 <jdoc:include type="modules" name="left" style="xhtml" />  
-                            </div>
-                            <div class="col-xs-6 col-sm-12 bottoms">
-                                <a href="#">Окна</a>
-                            </div>
-                            <div class="col-xs-6 col-sm-12 bottoms">
-                                <a href="#">Окна</a>
-                            </div>
-                            <div class="col-xs-6 col-sm-12 bottoms">
-                                <a href="#">Окна</a>
-                            </div>
-                            <div class="col-xs-6 col-sm-12 bottoms">
-                                <a href="#">Окна</a>
-                            </div>
-                            <div class="col-xs-6 col-sm-12 bottoms">
-                                <a href="#">Окна</a>
-                            </div>
+                            </div>                            
                         </div>
 
                     </div>
                     <div class="col-sm-9">
 
                         <div class="main-conteiner">
-                            <jdoc:include type="component" />
-                            <a href="#"><img src="img/blok2.png" alt="CREAM JANE JEANS DRESS"></a>
-                            <p>Окно - сложная строительная конструкция, 
-                                состоящая из рамы, фурнитуры и стеклопакета. 
-                                Предлагаем самостоятельно выбрать профиль 
-                                ПВХ рамы, фурнитуру и стеклопакет. </p>
-                        </div><!-- /.product-img -->
+                            <jdoc:include type="component" />                            
+                        </div>
                     </div>
 
                 </div>
